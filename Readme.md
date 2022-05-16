@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Палихова](https://up.htmlacademy.ru/htmlcss/34/user/2075495).
-* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer)
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 
