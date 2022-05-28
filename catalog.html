@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -19,12 +20,13 @@
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+
             <span class="visually-hidden">
               Поиск
             </span>
@@ -225,13 +227,15 @@
 
 
   <footer>
-    <section>
-      <h2 class="invite-to-subscribe">Подпишитесь на рассылку</h2>
+    <section class="invite-to-subscribe-catalog">
+      <div class="subscribe-container">
+      <h2 style="text-transform:uppercase;">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="email" class="visually-hidden">Email</label>
         <input type="email" name="email" id="email" placeholder="Ваш email">
-        <button class="button" type="submit">Подписаться</button>
+        <button class="button subscribe-button" type="submit">Подписаться</button>
+      </div>
       </form>
     </section>
     <section class="footer-social">
@@ -256,15 +260,15 @@
     </section>
     <section class="phone">
       <h2 class="visually-hidden">Телефон</h2>
-      <p class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
+      <p class="phone"><a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
     </section>
     <section>
       <h2 class="visually-hidden">Автор сайта</h2>
       <p class="logo-academy">
         <a class="footer-logo" href="https://htmlacademy.ru/">
           <img src="images/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Academy.">
-          </a>
-        </p>
+        </a>
+      </p>
     </section>
   </footer>
 
