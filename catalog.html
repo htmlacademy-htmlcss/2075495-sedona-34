@@ -7,27 +7,26 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
 
+<body>
   <header class="page-header">
     <a class="page-header-logo" href="index.html"><img src="images/logo.svg" width="139" height="70" alt="Логотип Cедона."></a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
+          <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-
-            <span class="visually-hidden">
+             <span class="visually-hidden">
               Поиск
             </span>
           </a>
@@ -40,7 +39,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Хочу сюда!</a>
+          <a class="navigation-link button" href="catalog.html">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -52,20 +51,20 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-icon" alt="Главная" src=""></a>
+          <a class="breadcrumbs-link" href="index.html"><span class="breadcrumbs-icon"></span></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
-    </header>
+
 
     <section class="catalog-hotels">
       <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <legend class="catalog-filter-title navigation-link">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -89,7 +88,7 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Тип Жилья:</legend>
+          <legend class="catalog-filter-title navigation-link">Тип Жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -113,7 +112,7 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость</legend>
+          <legend class="catalog-filter-title navigation-link">Стоимость</legend>
           <!-- Здесь будет ползунок с ценой -->
         </fieldset>
 
@@ -126,6 +125,7 @@
             <button class="button" type="reset">Сбросить</button>
           </li>
         </ul>
+      </header>
 
       </form>
       <span class="counter-hotels">Найдено гостиниц:</span>

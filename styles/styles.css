@@ -270,6 +270,48 @@ text-transform: uppercase;
 
  }
 
+ .inner-header-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+ }
+
+ .inner-header {
+  background-image: url(../images/header-background.jpg);
+  width: 1200px;
+  height: 393px;
+  left: 40px;
+  top: 65px;
+
+ }
+
+.breadcrumbs-icon {
+  background-image: url(../images/icons/breadcrumbs.svg);
+  background: #FFFFFF;
+  width: 12px;
+  height: 12px;
+}
+
+.breadcrumbs-item {
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  color: #FFFFFF;
+}
+
+.catalog-filter-list {
+  color: #FFFFFF;
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+
 .phone {
   color:#000000;
   text-decoration: none;
