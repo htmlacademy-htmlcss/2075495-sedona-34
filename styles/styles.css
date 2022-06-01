@@ -53,6 +53,7 @@ body {
 
 .house {
   background-image: url(../images/icons/house.svg);
+  background-position: left;
 }
 
 .search {
@@ -65,6 +66,13 @@ body {
   width: 74px;
   height: 74px;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+ .advantages-icons .advantages-description, .advantages-icons .advantages-title {
+  width: 230px;
+  height: 28px;
+  position: center;
 }
 
 .gift {
@@ -138,13 +146,17 @@ color: #000000;
   color: #FFFFFF;
 }
 
-.advantages-description {
+.advantages-description, .hotel-type, .hotel-price, .counter-hotel-page {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+.hotel-type, .hotel-price {
+  text-align: left;
 }
 
 .blue-description {
@@ -205,17 +217,19 @@ text-transform: uppercase;
 }
 
 .button {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   background-color:#756157;
   color:#FFFFFF;
   border-color:#756157;
-
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
+  padding: 9px;
 }
 
 .big-button {
@@ -234,6 +248,8 @@ text-transform: uppercase;
 
 .button-favorite {
   background-color: #82B3D3;
+  font-size: 16px;
+  line-height: 20px;
 
 }
 
@@ -285,14 +301,27 @@ text-transform: uppercase;
   height: 393px;
   left: 40px;
   top: 65px;
+  background-color:#000000;
+  }
 
- }
+  .counter-hotels {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  }
 
 .breadcrumbs-icon {
   background-image: url(../images/icons/breadcrumbs.svg);
   background: #FFFFFF;
   width: 12px;
   height: 12px;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .breadcrumbs-item {
@@ -328,4 +357,42 @@ line-height: 21px;
   color: rgba(117, 97, 87, 0.3);
 }
 
+.advantages-image {
+  color: #000000;
+  width: 800px;
+  height: 384px;
+}
 
+.hotel-card-title, .hotel-card-link {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-decoration: none;
+color: #000000;
+}
+
+.rating {
+  background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 9px;
+}
+
+.counter-hotel-page {
+  color: #333333;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-show-more {
+  border-color: #82B3D3;
+}
