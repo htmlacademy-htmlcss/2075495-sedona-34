@@ -4,28 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
 
+<body>
   <header class="page-header">
-    <a class="page-header-logo" href="index.html"><img src="" alt="Логотип Cедона."></a>
+    <a class="page-header-logo" href="index.html"><img src="images/logo.svg" width="139" height="70" alt="Логотип Cедона."></a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
+          <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden">
+             <span class="visually-hidden">
               Поиск
             </span>
           </a>
@@ -38,7 +39,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Хочу сюда!</a>
+          <a class="navigation-link button" href="catalog.html">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -50,20 +51,20 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-icon" alt="Главная" src=""></a>
+          <a class="breadcrumbs-link" href="index.html"><span class="breadcrumbs-icon"></span></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
-    </header>
+
 
     <section class="catalog-hotels">
       <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <legend class="catalog-filter-title navigation-link">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -87,7 +88,7 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Тип Жилья:</legend>
+          <legend class="catalog-filter-title navigation-link">Тип Жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -111,7 +112,7 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость</legend>
+          <legend class="catalog-filter-title navigation-link">Стоимость</legend>
           <!-- Здесь будет ползунок с ценой -->
         </fieldset>
 
@@ -124,6 +125,7 @@
             <button class="button" type="reset">Сбросить</button>
           </li>
         </ul>
+      </header>
 
       </form>
       <span class="counter-hotels">Найдено гостиниц:</span>
@@ -142,7 +144,7 @@
       <ul class="hotel-card-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img src="" class="hotel-card-img" alt="">
+            <img class="hotel-card-img" src="images/hotels/hotel-amara.jpg" width="300" height="211" alt="Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -156,7 +158,7 @@
 
         <li class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img src="" class="hotel-card-img" alt="">
+            <img class="hotel-card-img" src="images/hotels/hotel-villas.jpg" width="300" height="211" alt="Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -170,7 +172,7 @@
 
         <li class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img src="" class="hotel-card-img" alt="">
+            <img class="hotel-card-img" src="images/hotels/hotel-desert.jpg" width="300" height="211" alt="Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -184,7 +186,7 @@
 
         <li class="hotel-card">
           <a class="hotel-card-link" href="">
-            <img src="" class="hotel-card-img" alt="">
+            <img class="hotel-card-img" src="images/hotels/hotel-green-tree.jpg" width="300" height="211" alt="GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -225,13 +227,15 @@
 
 
   <footer>
-    <section>
-      <h2 class="invite-to-subscribe">Подпишитесь на рассылку</h2>
+    <section class="invite-to-subscribe-catalog">
+      <div class="subscribe-container">
+      <h2 style="text-transform:uppercase;">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="email" class="visually-hidden">Email</label>
         <input type="email" name="email" id="email" placeholder="Ваш email">
-        <button class="button" type="submit">Подписаться</button>
+        <button class="button subscribe-button" type="submit">Подписаться</button>
+      </div>
       </form>
     </section>
     <section class="footer-social">
@@ -256,12 +260,15 @@
     </section>
     <section class="phone">
       <h2 class="visually-hidden">Телефон</h2>
-      <p class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
+      <p class="phone"><a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
     </section>
     <section>
       <h2 class="visually-hidden">Автор сайта</h2>
-      <p class="logo-academy"><a class="footer-logo" href="https://htmlacademy.ru/"><img src=""
-            alt="Логотип HTML Academy."></a></p>
+      <p class="logo-academy">
+        <a class="footer-logo" href="https://htmlacademy.ru/">
+          <img src="images/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Academy.">
+        </a>
+      </p>
     </section>
   </footer>
 
