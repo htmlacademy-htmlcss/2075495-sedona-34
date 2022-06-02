@@ -231,11 +231,12 @@ body {
 
 .button-favorite, .button-blue {
   background-color: #82B3D3;
+  border-color: #82B3D3;
 
 }
 
 .button-favorite:focus,
-.button-favorite:hover {
+.button-favorite:hover, .button-blue:focus, .button-blue:hover {
   background-color: #68A2CA;
 }
 
