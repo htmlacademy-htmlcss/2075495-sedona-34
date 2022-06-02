@@ -229,10 +229,8 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-favorite {
+.button-favorite, .button-blue {
   background-color: #82B3D3;
-  font-size: 16px;
-  line-height: 20px;
 
 }
 
@@ -281,11 +279,9 @@ body {
 
 .inner-header {
   background-image: url(../images/header-background.jpg);
-  width: 1200px;
-  height: 393px;
-  left: 40px;
-  top: 65px;
+  background-size: cover;
   background-color: #000000;
+
 }
 
 .counter-hotels {
