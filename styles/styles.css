@@ -14,28 +14,53 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   color: #000000;
+  margin: 0 auto;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.body-container {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFFFFF;
 }
 
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
-  height: 5px;
+  height: 65px;
+
 }
 
 .page-header-logo {
-  position: absolute;
   width: 139px;
-  height: 70px;
-  left: 70px;
-  top: 0px;
 
+  margin-left: 70px;
+  display: block;
+
+
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .advantages {
@@ -50,6 +75,51 @@ body {
   background-repeat: no-repeat;
 }
 
+.advantages-head-container {
+  display: flex;
+  flex-direction: column;
+  weight: 654px;
+  margin: 63px 273px 90px 273px;
+}
+
+.advantages-item {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.item-container {
+  display: flex;
+}
+
+.list-for-town-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.item-picture {
+  display: flex;
+  width: 800px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.advantages-block {
+  display: flex;
+
+}
+
+.advantages-item-text {
+display: flex;
+flex-direction: column;
+padding: 92px 85px;
+width: 230px;
+}
+
 .house {
   background-image: url(../images/icons/house.svg);
   background-position: left;
@@ -62,8 +132,6 @@ body {
 .food {
   background-image: url(../images/icons/food.svg);
   fill: #FFFFFF;
-  width: 74px;
-  height: 74px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -79,6 +147,27 @@ body {
   background-image: url(../images/icons/gift.svg);
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 490px;
+}
+
+.navigation-user {
+  max-width: 284px;
+  margin-left: auto;
+}
+
 .navigation-link {
   color: #000000;
   line-height: 26px;
@@ -87,7 +176,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   font-size: 20px;
-  margin-left: 239px;
+
 }
 
 .navigation-link-current {
@@ -123,7 +212,13 @@ body {
   text-align: center;
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .advantages-title {
   font-weight: 700;
@@ -163,6 +258,14 @@ body {
 .list-for-town {
   background-color: #FFFFFF;
   color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 
 }
 
@@ -253,6 +356,15 @@ body {
 
 }
 
+.footer-social-list {
+  display: flex;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-around;
+}
+
 .subscribe-button {
   background-color: #82B3D3;
   border-color: #82B3D3;
@@ -267,7 +379,6 @@ body {
 
 .subscribe-container {
   text-align: center;
-
 }
 
 .inner-header-title {

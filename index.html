@@ -8,7 +8,8 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <div class="body-container">
+  <header class="page-header navigation-list">
     <a class="page-header-logo" href="index.html"><img src="images/logo.svg" width="139" height="70"
         alt="Логотип Cедона."></a>
     <nav class="navigation">
@@ -23,7 +24,7 @@
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-user">
+      <ul class="navigation-user navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <div class="search"></div>
@@ -46,20 +47,29 @@
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="main-index main-container">
+    <div class="page-container">
     <h1 class="main-index-image"><span class="visually-hidden">Добро пожаловать в Седону</span></h1>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages-head-container">
       <p class="advantages-head"><strong>Седона — небольшой городок в Аризоне, заслуживающий большего!</strong></p>
       <p class="comment">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
       <ul class="advantages-list">
         <li class="advantages-item">
+          <div class="advantages-block">
+          <div class="advantages-item-text">
           <h3 class="advantages-title">Настоящий городок</h3>
           <p class="advantages-description blue-description">Седона — не аттракцион для туристов, там течёт своя жизнь
           </p>
+        </div>
+        <div class="item-picture">
           <img class="advantages-image" src="images/photo-1.jpg" alt="Город Седона.">
-
+        </div>
+      </div>
           <ul class="list-for-town">
+            <div class="list-for-town-container">
             <li class="advantages-icons house">
               <h4 class="advantages-card advantages-title grey-head">Жильё</h4>
               <p class="advantages-description grey-description">Рекомендуем пожить в настоящем мотеле,<br>
@@ -76,15 +86,20 @@
               <p class="advantages-description grey-description">Не только китайского,<br>
                 но и настоящего местного производства!</p>
             </li>
-
+          </div>
           </ul>
         </li>
         <li class="advantages-item">
+          <div class="advantages-block">
+            <div class="advantages-item-text">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
           <p class="advantages-description blue-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
           </p>
+        </div>
           <img class="advantages-image" src="images/photo-2.jpg" alt="Мост дьявола.">
+        </div>
         </li>
+        <div class="item-container">
         <li class="advantages-item">
           <h3 class="advantages-title grey-head">Небольшая площадь</h3>
           <p class="advantages-description grey-description">Все достопримечательности находятся очень близко</p>
@@ -97,18 +112,19 @@
           <h3 class="advantages-title grey-head">Мало туристов</h3>
           <p class="advantages-description grey-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
+      </div>
       </ul>
     </section>
 
     <section class="invite-to-search">
       <h2 class="invite-to-search visually-hidden">Поиск гостиницы</h2>
       <p class="invite-question"><strong>Заинтересовались?</strong></p>
-      <!--убираем инлайн-стили-->
-      <p class="comment">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+       <p class="comment">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <form>
         <button class="button big-button" type="button">Поиск гостиницы в Седоне</button>
       </form>
     </section>
+  </div>
   </main>
 
   <footer>
@@ -123,6 +139,7 @@
       </div>
       </form>
     </section>
+    <section class="footer-end">
     <section class="footer-social">
       <h2 class="visually-hidden">Давайте дружить</h2>
       <ul class="footer-social-list">
@@ -155,7 +172,9 @@
         </a>
       </p>
     </section>
+  </section>
   </footer>
+</div>
 </body>
 
 </html>
