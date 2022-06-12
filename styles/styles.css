@@ -123,11 +123,14 @@ body {
   flex-direction: column;
   box-sizing: border;
   align-items: center;
+  justify-content: center;
   width: 400px;
   height: 383px;
   margin: 0;
   padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
+  padding-top: 11px;
+  padding-bottom: 11px;
 
 }
 
@@ -141,6 +144,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: inherit;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .gift-block {
@@ -153,14 +158,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
-  ;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
-
-/* .house-card {
-  padding: 0 85px;
-} */
-
-
 
 .item-picture {
   display: flex;
@@ -190,12 +190,18 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   padding-top: 11px;
   padding-bottom: 11px;
+  width: 400px;
+  height: 383px;
 
 }
 
 .road-block {
   background-color: rgba(131, 179, 211, 0.2);
   ;
+  width: 400px;
+  height: 383px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .advantages-item-text {
