@@ -68,12 +68,13 @@ body {
 
 }
 
-.advantages-icons {
+/* .advantages-icons {
   fill: #FFFFFF;
   width: 74px;
   height: 74px;
   background-repeat: no-repeat;
-}
+  background-position: center;
+} */
 
 .advantages-head-container {
   display: flex;
@@ -114,20 +115,52 @@ body {
   box-sizing: border-box;
 
 
+
 }
 
-.house-card {
-  padding: 0 85px;
-}
-
-.list-for-town-block {
+.house-block {
   display: flex;
   flex-direction: column;
-  height: 223px;
-  width: 230px;
-  padding: 85px 85px;
+  box-sizing: border;
+  align-items: center;
+  width: 400px;
+  height: 383px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(131, 179, 211, 0.12);
 
 }
+
+.food-block {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border;
+  align-items: center;
+  width: 400px;
+  height: 383px;
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+}
+
+.gift-block {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border;
+  align-items: center;
+  width: 400px;
+  height: 383px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(131, 179, 211, 0.12);
+  ;
+}
+
+/* .house-card {
+  padding: 0 85px;
+} */
+
+
 
 .item-picture {
   display: flex;
@@ -146,6 +179,10 @@ body {
 .town-block,
 .devil-block {
   background-color: #82B3D3;
+}
+
+.devil-block {
+  flex-direction: row-reverse;
 }
 
 .square-block,
@@ -168,9 +205,19 @@ body {
   width: 230px;
 }
 
+
+
+
 .house {
   background-image: url(../images/icons/house.svg);
-  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+
 }
 
 .search {
@@ -179,10 +226,15 @@ body {
 
 .food {
   background-image: url(../images/icons/food.svg);
-  fill: #FFFFFF;
   background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .advantages-description,
 .advantages-title {
@@ -194,6 +246,12 @@ body {
 
 .gift {
   background-image: url(../images/icons/gift.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 }
 
 .navigation {
@@ -309,15 +367,13 @@ body {
 .list-for-town {
   background-color: #FFFFFF;
   color: #000000;
-  display: grid;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   list-style: none;
   margin: 0;
   padding: 0;
-
-
 
 }
 
