@@ -736,7 +736,7 @@ body {
   margin-top: 57px;
   margin-bottom: 96px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -747,6 +747,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
+
 
 .inner-card-wrap {
   display: flex;
@@ -852,11 +853,17 @@ body {
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
   background-color: #82B3D3;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
+  padding: 9px 16px;
 }
 
 .pagination-current {
@@ -866,4 +873,24 @@ body {
 
 .pagination-show-more {
   border-color: #82B3D3;
+}
+
+.pagination-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 354px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.paginatin-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-container {
+  display: flex;
+  width: 1056px;
+  justify-content: space-between;
 }
