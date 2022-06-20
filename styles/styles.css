@@ -42,17 +42,12 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   height: 65px;
-
-
 }
 
 .page-header-logo {
   width: 139px;
-
   margin-left: 70px;
   display: block;
-
-
 }
 
 .main-container {
@@ -61,7 +56,6 @@ body {
 
 .advantages {
   text-align: center;
-
 }
 
 /* .advantages-icons {
@@ -75,7 +69,7 @@ body {
 .advantages-head-container {
   display: flex;
   flex-direction: column;
-  weight: 654px;
+  width: 654px;
   margin: 0;
   padding: 63px 273px 90px 273px;
 }
@@ -87,7 +81,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .advantages-item-row {
@@ -102,7 +95,6 @@ body {
 .house-block {
   display: flex;
   flex-direction: column;
-  box-sizing: border;
   align-items: center;
   justify-content: center;
   width: 400px;
@@ -112,13 +104,11 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   padding-top: 11px;
   padding-bottom: 11px;
-
 }
 
 .food-block {
   display: flex;
   flex-direction: column;
-  box-sizing: border;
   align-items: center;
   width: 400px;
   height: 383px;
@@ -133,7 +123,6 @@ body {
 .gift-block {
   display: flex;
   flex-direction: column;
-  box-sizing: border;
   align-items: center;
   width: 400px;
   height: 383px;
@@ -142,7 +131,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   padding-top: 11px;
   padding-bottom: 11px;
-
 }
 
 .item-picture {
@@ -150,13 +138,10 @@ body {
   width: 800px;
   padding: 0;
   margin: 0;
-
 }
 
 .advantages-block {
   display: flex;
-
-
 }
 
 .town-block,
@@ -169,7 +154,6 @@ body {
   display: block;
   padding-bottom: 30px;
   padding-top: 30px;
-
 }
 
 .devil-description::before {
@@ -177,7 +161,6 @@ body {
   display: block;
   padding-bottom: 30px;
   padding-top: 30px;
-
 }
 
 .square-description::before {
@@ -230,9 +213,6 @@ body {
   width: 230px;
 }
 
-
-
-
 .house {
   background-image: url(../images/icons/house.svg);
   background-repeat: no-repeat;
@@ -243,9 +223,6 @@ body {
   justify-content: center;
   align-items: center;
   align-self: center;
-
-
-
 }
 
 .search {
@@ -265,12 +242,10 @@ body {
   margin-right: auto;
 }
 
-
 .advantages-description,
 .advantages-title {
   width: 230px;
   height: 28px;
-  position: center;
 }
 
 .gift {
@@ -296,6 +271,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -417,7 +393,6 @@ body {
   background-repeat: no-repeat;
   color: #000000;
   background-color: #FFFFFF;
-  width: 981;
   height: 485px;
 }
 
@@ -446,8 +421,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
 
 .advantages-title {
   font-weight: 700;
@@ -483,8 +456,6 @@ body {
   margin-left: 160px;
 
 }
-
-
 
 .blue-description {
   color: #FFFFFF;
@@ -542,7 +513,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -557,17 +535,15 @@ body {
   border-color: #756157;
   border-radius: 4px;
   padding: 10px 35px;
-  width: 160px;
+  min-width: 160px;
 }
 
 .big-button {
   width: 574px;
   height: 60px;
   font-size: 20px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding: 23px 75px;
+  border-width: 0;
 }
 
 .button-more {
@@ -591,7 +567,6 @@ body {
 .button-blue {
   background-color: #82B3D3;
   border-color: #82B3D3;
-
 }
 
 .button-favorite {
@@ -609,10 +584,6 @@ body {
   border-width: 0;
   color: #FFFFFF;
   border-radius: 4px;
-
-
-
-
 }
 
 .button-submit {
@@ -639,7 +610,6 @@ body {
 .invite-to-subscribe-catalog {
   width: 1200px;
   height: 411px;
-
 }
 
 .footer-social {
@@ -660,7 +630,6 @@ body {
   height: 120px;
   align-items: center;
   padding-top: 45px;
-
 }
 
 .subscribe-button {
@@ -668,8 +637,8 @@ body {
   border-color: #82B3D3;
   width: 200px;
   height: 60px;
-
-
+  font-size: 20px;
+  padding: 12px 15px;
 }
 
 .email-field {
@@ -740,7 +709,6 @@ body {
   align-items: flex-start;
 }
 
-
 .inner-card-wrap {
   display: flex;
   width: 300px;
@@ -755,9 +723,25 @@ body {
 }
 
 .select-control {
+  display: flex;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 14px 19px 14px 19px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-right: 191px;
+}
+
+.control-wrap {
+  display: flex;
+  width: 1057px;
+}
+
+.card-buttons-wrap {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
 }
 
 .breadcrumbs-item {
@@ -780,8 +764,6 @@ body {
   display: flex;
 
 }
-
-
 
 .breadcrumbs {
   display: flex;
@@ -866,7 +848,19 @@ body {
 
 .pagination-show-more {
   border-color: #82B3D3;
+  border-width: 0;
 }
+
+/* тут надо разобраться как стили направить только на элементы начиная со второго
+ .pagination-link:not(:first-child):hover, .pagination-link:not(:first-child):focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+
+} */
 
 .pagination-list {
   display: flex;

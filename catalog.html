@@ -142,19 +142,23 @@
         </form>
 
         <div class="inner-wrap-catalog">
+          <div class="control-wrap">
+            <span class="counter-hotels">Найдено гостиниц:</span>
+            <!--тут должно быть число, которое считает JS-->
 
-          <span class="counter-hotels">Найдено гостиниц:</span>
-          <!--тут должно быть число, которое считает JS-->
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
 
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
 
-          <a class="navigation-link" href="#"><span class="visually-hidden">Показать карточки</span></a>
-          <a class="navigation-link" href="#"><span class="visually-hidden">Показать слайдер</span></a>
-          <a class="navigation-link" href="#"><span class="visually-hidden">Показать список</span></a>
+            <a class="navigation-link" href="#"><span class="visually-hidden">Показать карточки</span></a>
+            <a class="navigation-link" href="#"><span class="visually-hidden">Показать слайдер</span></a>
+            <a class="navigation-link" href="#"><span class="visually-hidden">Показать список</span></a>
+
+          </div>
+
           <ul class="hotel-card-list">
             <li class="hotel-card">
               <a class="hotel-card-link" href="">
@@ -165,9 +169,10 @@
               <div class="inner-card-wrap">
                 <p class="hotel-type">Гостиница</p>
                 <b class="hotel-price">От 4000 ₽</b>
-                <a class="hotel-more" href="#"><button class="button button-more">Подробнее</button></a>
-                <button class="button-favorite" type="button">В избранное</button>
-
+                <div class="card-buttons-wrap">
+                  <a class="hotel-more" href="#"><button class="button button-more">Подробнее</button></a>
+                  <button class="button-favorite" type="button">В избранное</button>
+                </div>
                 <span class="visually-hidden">Звезды рейтинга: 4</span>
 
                 <!--тут должны быть звезды рейтинга-->
