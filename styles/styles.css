@@ -714,6 +714,10 @@ body {
   align-items: flex-start;
 }
 
+.hotel-card-img {
+  object-fit: contain;
+}
+
 .hotel-card {
   padding: 20px;
   display: flex;
