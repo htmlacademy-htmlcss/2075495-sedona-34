@@ -376,6 +376,7 @@ body {
 
 .backup-button:hover {
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .backup-button:active {
@@ -549,6 +550,7 @@ body {
 .button:hover,
 .button:focus {
   background-color: #615048;
+  cursor: pointer;
 }
 
 .button:active {
@@ -592,6 +594,7 @@ body {
 .button-blue:focus,
 .button-blue:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .invite-to-subscribe {
@@ -649,6 +652,7 @@ body {
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .subscribe-container {
@@ -789,12 +793,17 @@ body {
 .breadcrumbs {
   display: flex;
   margin-left: 70px;
+  margin-top: 10px;
   width: 111px;
+  list-style-type: none;
+
+
 }
 
 .inner-header-title {
   padding-left: 70px;
   padding-top: 52px;
+  margin: 0;
 }
 
 .catalog-filter {
@@ -813,6 +822,7 @@ body {
 .phone:hover,
 .phone:focus {
   color: #756157;
+  cursor: pointer;
 }
 
 .phone:active {
