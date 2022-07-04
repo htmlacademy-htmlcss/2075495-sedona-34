@@ -361,6 +361,7 @@ body {
 }
 
 .backup-button {
+  display: inline-block;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -537,6 +538,7 @@ body {
 }
 
 .button-more {
+  display: inline-block;
   max-width: 140px;
   height: 37px;
   padding: 5px 11px 5px 11px;
@@ -565,6 +567,7 @@ body {
 }
 
 .button-favorite {
+  display: inline-block;
   width: 140px;
   height: 37px;
   font-size: 16px;
