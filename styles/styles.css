@@ -432,6 +432,12 @@ body {
   cursor: pointer;
 }
 
+..backup-button:focus {
+  color: #FFFFFF;
+  border: 3px solid #83B3D3;
+border-radius: 4px;
+}
+
 .backup-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -640,6 +646,18 @@ body {
   text-align: center;
   border-radius: 4px;
 }
+
+.button-submit:focus {
+  border: 3px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.button-submit:active {
+  background: #68A2CA;
+  color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
 
 .button-favorite:focus,
 .button-favorite:hover,
