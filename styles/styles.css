@@ -1144,3 +1144,7 @@ margin: 12px;
   background-color: #E6E6E6;
   content: "";
 }
+
+.logo-academy:hover {
+    filter: sepia(1) hue-rotate(320deg) saturate(10);
+}
