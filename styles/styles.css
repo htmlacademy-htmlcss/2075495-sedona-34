@@ -236,6 +236,7 @@ body {
   background-image: url(../images/icons/search.svg);
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
 }
 
 .favorite {
@@ -243,7 +244,7 @@ body {
   height: 20px;
   width: 19px;
   margin: 0;
-
+  position: absolute;
   padding: 0;
   background-image: url(../images/icons/favorite.svg);
   background-repeat: no-repeat;
@@ -799,11 +800,7 @@ body {
 
 }
 
-.breadcrumbs-item {
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
+
 
 .catalog-filter-title {
   color: #FFFFFF;
@@ -822,13 +819,96 @@ body {
 
 .breadcrumbs {
   display: flex;
-  margin-left: 70px;
-  margin-top: 10px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  position: relative;
   width: 111px;
   list-style-type: none;
+  justify-content: space-between;
+}
 
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.breadcrumbs-icon {
+  display: block;
+
+  margin-top: 5px;
+  margin-left: 70px;
+  }
+
+.breadcrumbs-icon::after {
+  background-image: url(../images/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 9px;
+  background-position: center;
+  padding-right: 5px;
+  padding-left: 22px;
+  margin-top: 45px;
+  content: "";
 
 }
+
+.breadcrumbs-icon:hover {
+  fill: #C2C3CC;
+}
+
+.breadcrumbs-icon:focus {
+  fill: #FFFFFF;
+}
+
+.card-grid-toggle {
+display: grid;
+grid-template-columns: 48px 48px 48px;
+grid-template-rows: 48px;
+grid-template-areas: "cards slider list";
+gap: 8px;
+box-sizing: border-box;
+
+}
+
+.cards, .slider, .list {
+  min-width: 48px;
+padding: 0;
+margin: 0;
+margin-right: auto;
+margin: 12px;
+ outline: 2px solid #E5E5E5;
+  background-color: #FFFFFF;
+  align-self: center;
+  padding: 14px 0 14px 0;
+}
+
+.cards:hover, .slider:hover, .list:hover {
+  outline: 2px solid #000000;
+  background-color: #FFFFFF;
+
+}
+
+.cards:focus, .slider:focus, .list:focus {
+  outline: 2px solid #68A2CA;
+  background-color: #FFFFFF;
+
+}
+
+.cards:active, .slider:active, .list:active {
+  outline: 2px solid #000000;
+  background-color: #FFFFFF;
+
+}
+
+  .card-grid-toggle-current {
+    outline: 2px solid #000000;
+    background-color: #FFFFFF;
+  }
+
 
 .inner-header-title {
   padding-left: 70px;
