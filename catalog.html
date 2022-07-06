@@ -16,19 +16,18 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link  navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <div class="search"></div>
+              <a class="navigation-link search" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -39,6 +38,7 @@
                 <span class="visually-hidden">
                   Избранное
                 </span>
+                <span class="favorite-count">12</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -53,8 +53,8 @@
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-icon" href="index.html">
+            <li class="breadcrumbs-item breadcrumbs-icon">
+              <a class="breadcrumbs-link" href="index.html">
                 <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" fill="white"/>
                   </svg>
@@ -184,10 +184,8 @@
                   <button class="button-favorite" type="button">В избранное</button>
                 </div>
                 <div class="rating-list">
-                <span class="visually-hidden stars">Звезды рейтинга: 4</span>
-
-                <!--тут должны быть звезды рейтинга-->
-
+                <span class="visually-hidden">Звезды рейтинга: 4</span>
+                <span class="stars stars-amara"></span>
                 <span class="rating">Рейтинг: 8,5</span>
               </div>
               </div>
@@ -207,8 +205,7 @@
 
                 <div class="rating-list">
                 <span class="visually-hidden">Звезды рейтинга: 4</span>
-                <!--тут должны быть звезды рейтинга-->
-
+                <span class="stars stars-villas"></span>
                 <span class="rating">Рейтинг: 9,2</span>
               </div>
               </div>
@@ -227,7 +224,7 @@
                 <button class=" button-favorite" type="button">В избранное</button>
                 <div class="rating-list">
                 <span class="visually-hidden">Звезды рейтинга: 3</span>
-                <!--тут должны быть звезды рейтинга-->
+                <span class="stars stars-desert"></span>
                 <span class="rating">Рейтинг: 6,9</span>
               </div>
               </div>
@@ -246,7 +243,7 @@
                 <button class=" button-favorite" type="button">В избранное</button>
                 <div class="rating-list">
                 <span class="visually-hidden">Звезды рейтинга: 2</span>
-                <!--тут должны быть звезды рейтинга-->
+                <span class="stars stars-greentree"></span>
                 <span class="rating">Рейтинг: 5,0</span>
               </div>
               </div>
