@@ -751,6 +751,7 @@ body {
   background-size: cover;
   background-color: #000000;
   margin-bottom: 73px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -872,11 +873,18 @@ body {
   margin: 0;
 }
 
+.hotels-link:hover, .hotels-link:focus {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
 
+.hotels-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
 
 .breadcrumbs-icon {
   display: block;
-
   margin-top: 5px;
   margin-left: 70px;
   }
@@ -892,16 +900,16 @@ body {
   padding-left: 22px;
   margin-top: 45px;
   content: "";
+  }
 
+.breadcrumbs-link:hover, .breadcrumbs-link:focus {
+  opacity: 0.6;
 }
 
-.breadcrumbs-icon:hover {
-  fill: #C2C3CC;
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
-.breadcrumbs-icon:focus {
-  fill: #FFFFFF;
-}
 
 .card-grid-toggle {
 display: grid;
@@ -1037,7 +1045,7 @@ margin: 12px;
 .counter-hotel-page {
   color: #333333;
   width: 338px;
-  ma
+  margin-top: 20px;
 }
 
 .pagination-link {
@@ -1064,16 +1072,26 @@ margin: 12px;
   border-width: 0;
 }
 
-/* тут надо разобраться как стили направить только на элементы начиная со второго
- .pagination-link:not(:first-child):hover, .pagination-link:not(:first-child):focus {
+.pagination-link:hover, .pagination-link:focus {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .pagination-link:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
 
-} */
+.pagination-current:hover, .pagination-current:focus {
+  background-color: #F2F2F2;
+  cursor: default;
+}
+
+.pagination-current:active {
+  background-color: #F2F2F2;
+
+  color: #000000
+}
 
 .pagination-list {
   display: flex;
@@ -1083,6 +1101,7 @@ margin: 12px;
   width: 354px;
   justify-content: space-between;
   margin-bottom: 30px;
+
 }
 
 .paginatin-item:not(:last-child) {
@@ -1090,8 +1109,20 @@ margin: 12px;
 }
 
 .pagination-container {
+  position: relative;
   display: flex;
   width: 1056px;
   justify-content: space-between;
   margin-top: 76px;
+  }
+
+.pagination-container::before {
+  position: absolute;
+  right: 1px;
+  bottom: 145px;
+  left: 1px;
+  margin-bottom: -20px;
+  height: 1px;
+  background-color: #E6E6E6;
+  content: "";
 }
