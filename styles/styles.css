@@ -734,7 +734,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-right: 191px;
 
 }
 
@@ -785,12 +784,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-right: 191px;
 }
 
 .control-wrap {
   display: flex;
   width: 1057px;
+  justify-content: space-between;
 }
 
 .card-buttons-wrap {
@@ -986,6 +985,8 @@ margin: 12px;
 
 .counter-hotel-page {
   color: #333333;
+  width: 338px;
+  ma
 }
 
 .pagination-link {
