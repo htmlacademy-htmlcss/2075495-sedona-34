@@ -1145,6 +1145,23 @@ margin: 12px;
   content: "";
 }
 
-.logo-academy:hover {
-    filter: sepia(1) hue-rotate(320deg) saturate(10);
+.footer-logo-icon:hover, .footer-logo-icon:focus {
+    fill: #756157;
+}
+
+.footer-logo-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+
+.footer-social-icon {
+  fill: #83B3D3;
+}
+
+.footer-social-icon:hover, .footer-social-icon:focus {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
