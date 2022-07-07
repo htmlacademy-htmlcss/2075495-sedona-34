@@ -507,9 +507,6 @@ body {
   text-align: center;
 }
 
-.advantages-description {
-}
-
 .hotel-type,
 .hotel-price {
   font-size: 18px;
@@ -811,7 +808,7 @@ body {
   background-size: cover;
   background-color: #000000;
   margin-bottom: 73px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .counter-hotels {
@@ -980,8 +977,6 @@ body {
 .slider,
 .list {
   min-width: 48px;
-  padding: 0;
-  margin: 0;
   margin-right: auto;
   margin: 12px;
   outline: 2px solid #e5e5e5;
