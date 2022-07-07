@@ -47,6 +47,7 @@ body {
 .page-header-logo {
   width: 139px;
   margin-left: 70px;
+  margin-right: 47px;
   display: block;
 }
 
@@ -71,7 +72,7 @@ body {
   flex-direction: column;
   width: 654px;
   margin: 0;
-  padding: 63px 273px 90px 273px;
+  padding: 33px 273px 90px 273px;
 }
 
 .advantages-item {
@@ -101,8 +102,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
-  padding-top: 11px;
+  padding-top: 20px;
   padding-bottom: 11px;
+  gap: 65px;
 }
 
 .food-block {
@@ -114,9 +116,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: inherit;
-  padding-top: 11px;
+  padding-top: 20px;
   padding-bottom: 11px;
   align-content: center;
+  gap: 65px;
 }
 
 .gift-block {
@@ -128,8 +131,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
-  padding-top: 11px;
+  padding-top:20px;
   padding-bottom: 11px;
+  gap: 65px;
 }
 
 .item-picture {
@@ -152,7 +156,7 @@ body {
   content: "— №1 —";
   display: block;
   padding-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 42px;
 }
 
 .devil-description::before {
@@ -190,8 +194,7 @@ body {
 .square-block,
 .tourists-block {
   background-color: rgba(131, 179, 211, 0.12);
-  padding-top: 11px;
-  padding-bottom: 11px;
+
   width: 400px;
   height: 383px;
 }
@@ -200,8 +203,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   height: 383px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+
 }
 
 .advantages-item-text {
@@ -209,13 +211,14 @@ body {
   flex-direction: column;
   padding: 92px 85px;
   width: 230px;
+  gap: 10px;
 }
 
 .house {
   background-image: url(../images/icons/house.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: 41px;
+  background-position-y: 81px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,7 +274,7 @@ body {
   background-image: url(../images/icons/food.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: 41px;
+  background-position-y: 81px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +286,9 @@ body {
 .advantages-description,
 .advantages-title {
   width: 230px;
-  height: 28px;
+  height: 46px;
+  margin: 0;
+  padding: 0;
 }
 
 .gift {
@@ -291,7 +296,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   background-position: center;
-  background-position-y: 41px;
+  background-position-y: 81px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -314,15 +319,21 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   list-style: none;
-  width: 490px;
-  justify-content: space-evenly;
+  width: 430px;
+  gap: 34px;
   align-items: flex-start;
 }
 
 .navigation-user {
   max-width: 284px;
   margin-left: auto;
-  justify-content: space-between;
+  margin-right: 25px;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.navigation-user:nth-child(3n) {
+  padding-right: 200px;
 }
 
 .navigation-link {
@@ -460,6 +471,13 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  width: 655px;
+}
+
+.comment-invite {
+  width: 592px;
+  padding-bottom: 55px;
 }
 
 .advantages-list {
@@ -480,6 +498,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
 }
 
 .advantages-description,
@@ -487,6 +506,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+.advantages-description {
+
 }
 
 .hotel-type,
@@ -508,17 +531,24 @@ body {
 
 .grey-description {
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .grey-head {
   color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
 }
 
 .list-for-town {
   background-color: #ffffff;
   color: #000000;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-areas: "house-block food-block gift-block";
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 384px;
   justify-content: center;
   list-style: none;
   margin: 0;
@@ -527,12 +557,15 @@ body {
 
 .advantages-card {
   text-transform: uppercase;
+  padding-top: 70px;
 }
 
 .invite-to-search {
   text-align: center;
-  padding: 91px 304px 93px 304px;
+  padding: 61px 304px 93px 304px;
 }
+
+
 
 .invite-question {
   color: #000000;
@@ -547,6 +580,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -571,7 +605,7 @@ body {
   color: #ffffff;
   border-color: #756157;
   border-radius: 4px;
-  padding: 10px 35px;
+  padding: 9px 35px;
   min-width: 160px;
 }
 
@@ -709,6 +743,7 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 40px;
+  margin-top: 53px;
 }
 
 .footer-end {
@@ -716,7 +751,6 @@ body {
   justify-content: space-around;
   height: 120px;
   align-items: center;
-  padding-top: 45px;
 }
 
 .subscribe-button {
@@ -736,6 +770,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 46px;
+  margin-top: 30px;
 }
 
 .subscribe-button:hover,
