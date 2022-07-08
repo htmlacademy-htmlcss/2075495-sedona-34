@@ -81,6 +81,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item-row {
@@ -90,50 +92,6 @@ body {
 
 .item-container {
   display: flex;
-}
-
-.house-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 383px;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(131, 179, 211, 0.12);
-  padding-top: 20px;
-  padding-bottom: 11px;
-  gap: 65px;
-}
-
-.food-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  height: 383px;
-  margin: 0;
-  padding: 0;
-  background-color: inherit;
-  padding-top: 20px;
-  padding-bottom: 11px;
-  align-content: center;
-  gap: 65px;
-}
-
-.gift-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  height: 383px;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(131, 179, 211, 0.12);
-  padding-top: 20px;
-  padding-bottom: 11px;
-  gap: 65px;
 }
 
 .item-picture {
@@ -155,8 +113,8 @@ body {
 .town-description::before {
   content: "— №1 —";
   display: block;
-  padding-bottom: 30px;
-  padding-top: 42px;
+  padding-bottom: 31px;
+  padding-top: 32px;
 }
 
 .devil-description::before {
@@ -223,6 +181,9 @@ body {
   justify-content: center;
   align-items: center;
   align-self: center;
+  background-color: #83B3D31F;
+  min-height: 384px;
+  margin-top: 150px;
 }
 
 .search {
@@ -280,6 +241,7 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  min-height: 384px;
 }
 
 .advantages-description,
@@ -300,6 +262,9 @@ body {
   justify-content: center;
   align-items: center;
   align-self: center;
+  min-height: 384px;
+  background-color: #83B3D31F;
+  margin-top: 152px;
 }
 
 .navigation {
@@ -326,9 +291,9 @@ body {
 .navigation-user {
   max-width: 284px;
   margin-left: auto;
-  margin-right: 25px;
+  margin-right: 16px;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 28px;
 }
 
 .navigation-user:nth-child(3n) {
@@ -551,8 +516,25 @@ body {
 }
 
 .advantages-card {
+ display: grid;
+ grid-template-columns: 230px;
+ grid-template-rows: 72px 28px 63px;
+ gap: 30px;
+ padding: 80px 85px 70px 85px;
+}
+
+.advantages-title-for-town {
   text-transform: uppercase;
-  padding-top: 70px;
+  font-size: 24px;
+  grid-row: 2/3;
+  margin: 0;
+}
+
+.advantages-description-for-town {
+  font-size: 18px;
+  grid-row: 3/4;
+  margin: 0;
+  line-height: 21px;
 }
 
 .invite-to-search {
@@ -606,8 +588,10 @@ body {
   width: 574px;
   height: 60px;
   font-size: 20px;
-  padding: 23px 75px;
+  padding: 19px 76px;
   border-width: 0;
+  font: inherit;
+  font-size: 20px;
 }
 
 .button-more {
@@ -732,17 +716,23 @@ body {
   display: flex;
   width: 116px;
   justify-content: space-between;
+  padding: 0 84px;
   list-style: none;
-  padding: 0;
   margin: 0;
   margin-top: 53px;
 }
 
 .footer-end {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 120px;
   align-items: center;
+
+}
+
+.logo-academy {
+
+
 }
 
 .subscribe-button {
@@ -754,6 +744,7 @@ body {
   border-style: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  font: inherit;
 }
 
 .invite-description {
@@ -1022,13 +1013,22 @@ body {
   margin: 40px 70px 70px 70px;
 }
 
+.logo-academy {
+  margin: 0;
+  padding-right: 69px;
+  padding-top: 20px;
+}
+
 .phone {
   color: #000000;
   text-decoration: none;
   text-align: center;
   font-size: 40px;
   line-height: 40px;
+  padding-top: 5px;
+  padding-left: 25px;
 }
+
 
 .phone:hover,
 .phone:focus {
