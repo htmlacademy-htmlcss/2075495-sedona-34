@@ -52,7 +52,7 @@
 
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
+          <ol class="breadcrumbs">
             <li class="breadcrumbs-item breadcrumbs-icon">
               <a class="breadcrumbs-link" href="index.html">
                 <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none"
@@ -66,7 +66,7 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link hotels-link">Гостиницы</a>
             </li>
-          </ul>
+          </ol>
 
           <section class="catalog-hotels">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -150,8 +150,7 @@
     </section>
     <div class="inner-wrap-catalog">
       <div class="control-wrap">
-        <span class="counter-hotels">Найдено гостиниц:</span>
-        <!--тут должно быть число, которое считает JS-->
+        <span class="counter-hotels">Найдено гостиниц: <span class="number-of-hotels">38</span></span>
 
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
@@ -285,8 +284,13 @@
           </li>
         </ul>
 
-        <div class="counter-hotel-page">Гостиниц на странице: </div>
-        <!--тут будет подсчитанное число гостиниц-->
+        <div class="counter-hotel-page"><span class="counter-hotel-title">Гостиниц на странице:</span>
+        <select class="hotels-number" aria-label="Число гостиниц">
+          <option value="4">4</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+      </div>
         </main>
 
 
@@ -297,7 +301,7 @@
               <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="email" class="visually-hidden">Email</label>
-                <input class="email-field" type="email" name="email" id="email" placeholder="Ваш email">
+                <input class="email-field" type="email" name="email" id="email" placeholder="Ваш e-mail">
                 <button class="button subscribe-button" type="submit">Подписаться</button>
             </div>
             </form>
