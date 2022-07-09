@@ -665,6 +665,13 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-submit {
+  padding: 15px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+}
+
 .button-submit:hover {
   background-color: #68a2ca;
   cursor: pointer;
@@ -704,12 +711,6 @@ body {
 .button:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
-}
-
-.button-submit {
-  padding: 15px;
-  text-align: center;
-  border-radius: 4px;
 }
 
 .invite-to-subscribe {
@@ -888,13 +889,18 @@ body {
 }
 
 .select-control {
-  display: flex;
+  width: 100%;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 14px 19px 14px 19px;
-  font-size: 18px;
+  padding: 14px 19px;
+  padding-right: 48px;
+  font: inherit;
   line-height: 21px;
   color: #333333;
+  background-image: url(../images/icons/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
 }
 
 .control-wrap {
@@ -1002,6 +1008,8 @@ body {
   gap: 8px;
   box-sizing: border-box;
   padding-top: 2px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .cards,
@@ -1388,6 +1396,7 @@ body {
   margin: 0;
   padding: 0;
   margin-left: 35px;
+  line-height: 21px;
 }
 
 .control-mark {
@@ -1439,4 +1448,38 @@ body {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 290px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.select-hotels-number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 158px;
+  margin-right: auto;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.select-control:active {
+  border-color: #3F5E72;
+  outline: none;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
