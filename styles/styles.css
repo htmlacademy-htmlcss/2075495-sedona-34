@@ -336,7 +336,6 @@ body {
 }
 
 .catalog-filter-group {
-  width: 151px;
   height: 149px;
   border-color: rgba(0, 0, 0, 0);
 }
@@ -1370,4 +1369,74 @@ body {
 .right-input {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.control-input {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  right: 21px;
+}
+
+.control-label {
+  margin: 0;
+  padding: 0;
+  margin-left: 35px;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  left: 20px;
+  outline: none;
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../images/checked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.control:active .control-mark  {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.control-input:disabled .control-mark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
