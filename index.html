@@ -228,6 +228,46 @@
       </footer>
     </div>
     </div>
+
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="search-filter-group">
+            <div class="search-filter-group-wrap">
+
+            <label class="date-coming-label search-label" for="date">Дата Заезда:</label>
+          <input class="date-input search-input" type="text" name="date" id="date" value="27 апреля 2020">
+<!-- Здесь ниже стоит пустой спан, потому что я хз как иначе выстроить гриды без него -->
+          <span></span><span class="date-comment date-coming-comment">Мы не можем отправить вас в прошлое.</span>
+          <label class="date-out-label search-label" for="date-out">Дата Выезда:</label>
+          <input class="date-input search-input" type="text" name="date-out" id="date-out" value="1 сентября 2021">
+          <span></span><span class="date-comment">На эти даты есть свободные номера. Пока есть.</span>
+        </div>
+
+          <div class="people-wrapper">
+          <label class="adults-label search-label" for="adults-number">Взрослые:</label>
+          <button class="modal-min"></button>
+          <input class="people-input search-input" type="number" name="adults-number" id="adults-number" placeholder="2">
+          <button class="modal-max"></button>
+          <label class="child-label search-label" for="child-number">Дети:</label>
+          <button class="modal-min min-child"></button>
+          <input class="people-input search-input" type="number" name="child-number" id="child-number" placeholder="1">
+          <button class="modal-max max-child"></button>
+          </div>
+
+          <button class="button search-button">Найти</button>
+
+        </fieldset>
+        </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
