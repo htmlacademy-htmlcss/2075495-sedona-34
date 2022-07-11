@@ -73,30 +73,31 @@
                 </div>
             </ul>
             <ul class="list-for-town">
-              <li class="house-block house">
-                <h4 class="advantages-card advantages-title grey-head">Жильё</h4>
-                <p class="advantages-description grey-description">Рекомендуем пожить в настоящем
+              <li class="advantages-card house">
+                <h4 class="advantages-title-for-town">Жильё</h4>
+                <p class="advantages-description-for-town">Рекомендуем пожить <br>в настоящем
                   мотеле,<br>
                   всё как в кино!</p>
               </li>
 
-              <li class="food-block food">
-                <h4 class="advantages-card advantages-title grey-head">Еда</h4>
-                <p class="advantages-description grey-description">Всегда заказывайте<br>
+              <li class="advantages-card food">
+                <h4 class="advantages-title-for-town">Еда</h4>
+                <p class="advantages-description-for-town">Всегда заказывайте<br>
                   топовый фирменный бургер, вы не разочаруетесь!
               </li>
-              <li class="gift-block gift">
-                <h4 class="advantages-card advantages-title grey-head">Сувениры</h4>
-                <p class="advantages-description grey-description">Не только китайского,<br>
+
+              <li class="advantages-card  gift">
+                <h4 class="advantages-title-for-town">Сувениры</h4>
+                <p class="advantages-description-for-town">Не только китайского,<br>
                   но и настоящего местного производства!</p>
               </li>
             </ul>
-            </li>
+
             <ul class="advantages-list">
               <li class="advantages-item">
                 <div class="advantages-block devil-block">
                   <div class="advantages-item-text">
-                    <h3 class="advantages-title">Там есть мост дьявола</h3>
+                    <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                     <p class="advantages-description blue-description devil-description">Да, по нему можно пройти! Если
                       вы осмелитесь,
                       разумеется
@@ -120,7 +121,7 @@
                 <li class="road-block">
                   <div class="advantages-block">
                     <div class="advantages-item-text">
-                      <h3 class="advantages-title grey-head">Красивая дорога</h3>
+                      <h3 class="advantages-title grey-head">Красивая<br> дорога</h3>
                       <p class="advantages-description grey-description road-description">Ехать в Седону из Лас-Вегаса
                         совсем не скучно!
                       </p>
@@ -130,33 +131,33 @@
                 <li class="tourists-block">
                   <div class="advantages-block">
                     <div class="advantages-item-text">
-                      <h3 class="advantages-title grey-head">Мало туристов</h3>
+                      <h3 class="advantages-title grey-head">Мало<br> туристов</h3>
                       <p class="advantages-description grey-description tourists-description">Большинство едет в Гранд
                         Каньон и толпится там
                       </p>
                     </div>
                   </div>
+                </li>
               </div>
-              </li>
-            </ul>
+
             </ul>
           </section>
 
           <section class="invite-to-search">
             <h2 class="invite-to-search visually-hidden">Поиск гостиницы</h2>
             <p class="invite-question"><strong>Заинтересовались?</strong></p>
-            <p class="comment">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+            <p class="comment comment-invite">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие
+              предложения гостиниц в
               Седоне
             </p>
             <form>
               <button class="button big-button" type="button">Поиск гостиницы в Седоне</button>
             </form>
           </section>
-
+        </div>
       </main>
 
       <footer>
-        <!-- <div class="page-footer-container"> пока контейнер не пригодился, но возможно нужен будет, когда иконки подключим -->
         <section class="invite-to-subscribe">
           <div class="subscribe-container">
             <h2 class="invite-title">Подпишитесь на рассылку</h2>
@@ -223,11 +224,73 @@
               </a>
             </p>
           </section>
-          <!-- </div> -->
         </section>
       </footer>
     </div>
     </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="search-filter-group">
+              <div class="search-filter-group-wrap">
+
+                <label class="date-coming-label search-label" for="date">Дата Заезда:</label>
+                <input class="date-input search-input" type="text" name="date" id="date" value="27 апреля 2020">
+                <!-- Здесь ниже стоит пустой спан, потому что я хз как иначе выстроить гриды без него -->
+                <span></span><span class="date-comment date-coming-comment">Мы не можем отправить вас в прошлое.</span>
+                <label class="date-out-label search-label" for="date-out">Дата Выезда:</label>
+                <input class="date-input search-input" type="text" name="date-out" id="date-out"
+                  value="1 сентября 2021">
+                <span></span><span class="date-comment">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+
+              <div class="people-wrapper">
+                <label class="adults-label search-label" for="adults-number">Взрослые:</label>
+                <button class="modal-min"></button>
+                <input class="people-input search-input" type="number" name="adults-number" id="adults-number"
+                  placeholder="2">
+                <button class="modal-max"></button>
+                <span class="child-label">
+                  <label class="child-label search-label" for="child-number">Дети:</label>
+                  <span class="tooltip">
+                  </span>
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_33716_652)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                        <path d="M1 0H0V1H1V0Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_33716_652">
+                          <rect width="1" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <button class="modal-min min-child"></button>
+                <input class="people-input search-input child-input" type="number" name="child-number" id="child-number"
+                  placeholder="1">
+                <button class="modal-max max-child"></button>
+              </div>
+
+              <button class="button search-button">Найти</button>
+
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
