@@ -10,8 +10,8 @@
   <body>
     <div class="body-container">
       <header class="page-header">
-        <a class="page-header-logo" href="index.html"><img src="images/logo.svg" width="139" height="70"
-            alt="Логотип Cедона."></a>
+        <a class="page-header-logo" href="index.html">
+          <img class="header-image" src="images/logo.svg" width="139" height="70" alt="Логотип Cедона."></a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -26,14 +26,24 @@
           </ul>
           <ul class="navigation-user navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link search" href="#">
+              <a class="navigation-link" href="#">
+                <svg class="search-image" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m18.2 17-3.8-3.7a8 8 0 0 0 1.8-4.9 8 8 0 0 0-8-8 8 8 0 1 0 5 14.4l3.6 3.8 1.4-1.6Zm-10-2.4a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
+                </svg>
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link favorite" href="#">
+              <a class="navigation-link" href="#">
+                <svg class="favorite-image" width="19" height="17" viewBox="0 0 19 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.6 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.2 0c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-1 .4L9 3.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -106,9 +116,9 @@
                   <img class="advantages-image" src="images/photo-2.jpg" alt="Мост дьявола.">
                 </div>
               </li>
+
               <div class="advantages-item-row">
                 <li class="square-block">
-
                   <div class="advantages-block">
                     <div class="advantages-item-text">
                       <h3 class="advantages-title grey-head">Небольшая площадь</h3>
@@ -166,8 +176,9 @@
               <label for="email" class="visually-hidden">Email</label>
               <input class="email-field" type="email" name="email" id="email" placeholder="Ваш email">
               <button class="button subscribe-button " type="submit">Подписаться</button>
-          </div>
-          </form>
+
+            </form>
+        </div>
         </section>
         <section class="footer-end">
           <section class="footer-social">
@@ -227,7 +238,6 @@
         </section>
       </footer>
     </div>
-    </div>
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
@@ -242,7 +252,6 @@
 
                 <label class="date-coming-label search-label" for="date">Дата Заезда:</label>
                 <input class="date-input search-input" type="text" name="date" id="date" value="27 апреля 2020">
-                <!-- Здесь ниже стоит пустой спан, потому что я хз как иначе выстроить гриды без него -->
                 <span></span><span class="date-comment date-coming-comment">Мы не можем отправить вас в прошлое.</span>
                 <label class="date-out-label search-label" for="date-out">Дата Выезда:</label>
                 <input class="date-input search-input" type="text" name="date-out" id="date-out"
@@ -252,10 +261,12 @@
 
               <div class="people-wrapper">
                 <label class="adults-label search-label" for="adults-number">Взрослые:</label>
-                <button class="modal-min"></button>
-                <input class="people-input search-input" type="number" name="adults-number" id="adults-number"
-                  placeholder="2">
-                <button class="modal-max"></button>
+                <div class="min-max-wrap">
+                  <button class="modal-min modal-min-max"></button>
+                  <input class="people-input search-input" type="number" name="adults-number" id="adults-number"
+                    placeholder="2">
+                  <button class="modal-max modal-min-max"></button>
+                </div>
                 <span class="child-label">
                   <label class="child-label search-label" for="child-number">Дети:</label>
                   <span class="tooltip">
@@ -277,10 +288,12 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
-                <button class="modal-min min-child"></button>
-                <input class="people-input search-input child-input" type="number" name="child-number" id="child-number"
-                  placeholder="1">
-                <button class="modal-max max-child"></button>
+                <div class="min-max-wrap">
+                  <button class="modal-min min-child modal-min-max"></button>
+                  <input class="people-input search-input child-input" type="number" name="child-number"
+                    id="child-number" placeholder="1">
+                  <button class="modal-max max-child modal-min-max"></button>
+                </div>
               </div>
 
               <button class="button search-button">Найти</button>
