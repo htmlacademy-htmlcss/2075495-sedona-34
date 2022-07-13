@@ -1085,7 +1085,7 @@ body {
 }
 
 .inner-header-title {
-  font-family: "PT Sans";
+  font: inherit;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
