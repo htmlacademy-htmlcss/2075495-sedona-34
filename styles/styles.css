@@ -82,11 +82,6 @@ body {
   padding: 0;
 }
 
-.advantages-item-row {
-  display: flex;
-  flex-direction: row;
-}
-
 .item-container {
   display: flex;
 }
