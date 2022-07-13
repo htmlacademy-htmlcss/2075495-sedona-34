@@ -109,13 +109,12 @@
                         </label>
                       </li>
                     </ul>
-
+                    </div>
                 </fieldset>
+                </div>
 
+            <fieldset class="catalog-filter-group catalog-choose-hotel">
 
-            </form>
-            <fieldset class="catalog-filter-group">
-              <div class="catalog-filter-type-house">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -140,10 +139,10 @@
                     </label>
                   </li>
                 </ul>
-              </div>
+
             </fieldset>
-            <fieldset class="catalog-filter-group">
-              <div class="catalog-filter-cost">
+            <fieldset class="catalog-filter-group catalog-filter-cost">
+
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
                 <div class="range-wrapper-inputs">
@@ -158,7 +157,7 @@
                     <input class="range-input right-input" type="number" value="9000" name="max-price" id="max-price">
                   </div>
                 </div>
-              </div>
+
 
               <div class="range">
                 <div class="range-scale">
@@ -185,12 +184,13 @@
                 </li>
               </ul>
             </div>
-    </div>
+
     </form>
+  </section>
     </header>
 
-    </section>
-    <div class="inner-wrap-catalog">
+
+    <section class="inner-wrap-catalog">
       <div class="control-wrap">
         <span class="counter-hotels">Найдено гостиниц: <span class="number-of-hotels">38</span></span>
 
@@ -235,7 +235,7 @@
             <p class="hotel-type">Гостиница</p>
             <b class="hotel-price">От 4000 ₽</b>
             <div class="card-buttons-wrap">
-              <a class="hotel-more" href="#"><button class="button button-more">Подробнее</button></a>
+              <a class="hotel-more button button-more" href="#">Подробнее</a>
               <button class="button-favorite" type="button">В избранное</button>
             </div>
             <div class="rating-list">
@@ -255,7 +255,7 @@
           <div class="inner-card-wrap">
             <p class="hotel-type">Гостиница</p>
             <b class="hotel-price">От 5000 ₽</b>
-            <a class="hotel-more" href="#"><button class="button button-more">Подробнее</button></a>
+            <a class="hotel-more button button-more">Подробнее</a>
             <button class="button-favorite button-favorite-checked" type="button">В избранном</button>
 
             <div class="rating-list">
@@ -275,7 +275,7 @@
           <div class="inner-card-wrap">
             <p class="hotel-type">Гостиница</p>
             <b class="hotel-price">От 2500 ₽</b>
-            <a class="hotel-more" href="#"><button class="button button-more">Подробнее</button></a>
+            <a class="hotel-more button button-more">Подробнее</a>
             <button class=" button-favorite" type="button">В избранное</button>
             <div class="rating-list">
               <span class="visually-hidden">Звезды рейтинга: 3</span>
@@ -294,7 +294,7 @@
           <div class="inner-card-wrap">
             <p class="hotel-type">Гостиница</p>
             <b class="hotel-price">От 1500 ₽</b>
-            <a class="hotel-more" href="#"><button class="button button-more">Подробнее</button></a>
+            <a class="hotel-more button button-more" href="#">Подробнее</a>
             <button class=" button-favorite" type="button">В избранное</button>
             <div class="rating-list">
               <span class="visually-hidden">Звезды рейтинга: 2</span>
@@ -328,6 +328,8 @@
           </li>
         </ul>
 
+        </div>
+
         <div class="counter-hotel-page"><span class="counter-hotel-title">Гостиниц на странице:</span>
           <div class="select-hotels-number">
             <select class="hotels-number select-control" aria-label="Число гостиниц">
@@ -349,8 +351,8 @@
                 <label for="email" class="visually-hidden">Email</label>
                 <input class="email-field" type="email" name="email" id="email" placeholder="Ваш e-mail">
                 <button class="button subscribe-button" type="submit">Подписаться</button>
-            </div>
-            </form>
+              </form>
+              </div>
           </section>
 
           <section class="footer-end">
@@ -406,6 +408,7 @@
                   </svg>
                 </a>
               </p>
+            </section>
             </section>
         </footer>
       </div>
