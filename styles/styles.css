@@ -460,7 +460,7 @@ body {
 .welcome-image {
   display: block;
   margin: 0 auto;
- }
+}
 
 .advantages-head {
   font-weight: 700;
@@ -848,7 +848,7 @@ body {
 }
 
 .email-field:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .email-field:focus {
@@ -946,10 +946,10 @@ body {
 }
 
 @-moz-document url-prefix() {
-  .counter-hotel-page{
+  .counter-hotel-page {
     padding-top: 28px;
   }
-  }
+}
 
 .control-wrap {
   display: flex;
@@ -1160,7 +1160,7 @@ body {
 
 .hotel-card-title {
   margin-bottom: 6px;
-    margin-top: 11px;
+  margin-top: 11px;
 }
 
 .rating-list {
