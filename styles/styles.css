@@ -753,6 +753,7 @@ body {
 
 .invite-to-subscribe {
   background-image: url(../images/footer-background.jpg);
+  background-color: #000000;
   color: #ffffff;
   background-repeat: no-repeat;
   height: 411px;
@@ -843,6 +844,10 @@ body {
   border-bottom-right-radius: 0;
 }
 
+.email-field:hover {
+  background-color: #E6E6E6;
+}
+
 .email-field:focus {
   border: none;
   outline: 3px solid #83b3d3;
@@ -921,6 +926,7 @@ body {
 }
 
 .select-control {
+  background-color: #ffffff;
   width: 100%;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -935,6 +941,12 @@ body {
   background-position: right 23px center;
   appearance: none;
 }
+
+@-moz-document url-prefix() {
+  .counter-hotel-page{
+    padding-top: 28px;
+  }
+  }
 
 .control-wrap {
   display: flex;
@@ -1620,7 +1632,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-top: 11px;
+  margin-top: 7px;
   margin-bottom: 11px;
   color: #333333;
 }
@@ -1643,12 +1655,19 @@ body {
 
 .adults-label {
   margin-right: 63px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .child-label {
+  font: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
   margin-left: 1px;
   padding-left: 20px;
-  padding-top: 10px;
   padding-right: 25px;
   margin-right: 18px;
 }
@@ -1700,11 +1719,12 @@ body {
 }
 
 .search-button {
-  width: 575px;
-  margin-top: 40px;
+  width: 576px;
+  margin-top: 28px;
   background-color: #83b3d3;
-  padding: 12px 26px;
+  padding: 20px 28px;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .search-button:hover,
@@ -1762,6 +1782,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: 386px;
+  padding-left: 21px;
 }
 
 .min-child {
@@ -1789,8 +1810,8 @@ body {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 365px;
-  right: 224px;
+  top: 355px;
+  right: 222px;
   display: block;
   width: 25px;
   height: 25px;

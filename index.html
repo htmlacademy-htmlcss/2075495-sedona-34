@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
   </head>
 
   <body>
@@ -66,7 +67,8 @@
             <div class="advantages-head-container">
               <p class="advantages-head"><strong>Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
               </p>
-              <p class="comment">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+              <p class="comment">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+              </p>
             </div>
             <ul class="advantages-list">
               <li class="advantages-item">
@@ -88,7 +90,8 @@
                 <h4 class="advantages-title-for-town">Жильё</h4>
                 <p class="advantages-description-for-town">Рекомендуем пожить в настоящем
                   мотеле,<br>
-                  всё как в кино!</p>
+                  всё как в кино!
+                </p>
               </li>
 
               <li class="advantages-card food">
@@ -173,13 +176,13 @@
             <p class="invite-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="email" class="visually-hidden">Email</label>
-              <input class="email-field" type="email" name="email" id="email" placeholder="Ваш email">
+              <input class="email-field" type="email" required name="email" id="email" placeholder="Ваш email">
               <button class="button subscribe-button " type="submit">Подписаться</button>
 
             </form>
           </div>
         </section>
-        <section class="footer-end">
+        <div class="footer-end">
           <section class="footer-social">
             <h2 class="visually-hidden">Давайте дружить</h2>
             <ul class="footer-social-list">
@@ -234,13 +237,13 @@
               </a>
             </p>
           </section>
-        </section>
+        </div>
       </footer>
     </div>
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -250,24 +253,24 @@
               <div class="search-filter-group-wrap">
 
                 <label class="date-coming-label search-label" for="date">Дата Заезда:</label>
-                <input class="date-input search-input" type="text" name="date" id="date" value="27 апреля 2020">
+                <input class="date-input search-input" type="text" required name="date" id="date" value="27 апреля 2020">
                 <span></span><span class="date-comment date-coming-comment">Мы не можем отправить вас в прошлое.</span>
                 <label class="date-out-label search-label" for="date-out">Дата Выезда:</label>
-                <input class="date-input search-input" type="text" name="date-out" id="date-out"
+                <input class="date-input search-input" type="text" required name="date-out" id="date-out"
                   value="1 сентября 2021">
                 <span></span><span class="date-comment">На эти даты есть свободные номера. Пока есть.</span>
               </div>
 
               <div class="people-wrapper">
-                <label class="adults-label search-label" for="adults-number">Взрослые:</label>
+                <label class="adults-label" for="adults-number">Взрослые:</label>
                 <div class="min-max-wrap">
-                  <button class="modal-min modal-min-max"></button>
-                  <input class="people-input search-input" type="number" name="adults-number" id="adults-number"
+                  <button class="modal-min modal-min-max" type="button"></button>
+                  <input class="people-input search-input" type="number" required name="adults-number" id="adults-number"
                     placeholder="2">
-                  <button class="modal-max modal-min-max"></button>
+                  <button class="modal-max modal-min-max" type="button"></button>
                 </div>
                 <span class="child-label">
-                  <label class="child-label search-label" for="child-number">Дети:</label>
+                  <label class="child-label" for="child-number">Дети:</label>
                   <span class="tooltip">
                   </span>
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
@@ -288,14 +291,14 @@
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="min-max-wrap">
-                  <button class="modal-min min-child modal-min-max"></button>
-                  <input class="people-input search-input child-input" type="number" name="child-number"
+                  <button class="modal-min min-child modal-min-max" type="button"></button>
+                  <input class="people-input search-input child-input" type="number" required name="child-number"
                     id="child-number" placeholder="1">
-                  <button class="modal-max max-child modal-min-max"></button>
+                  <button class="modal-max max-child modal-min-max" type="button"></button>
                 </div>
               </div>
 
-              <button class="button search-button">Найти</button>
+              <button class="button search-button" type="submit">Найти</button>
 
             </fieldset>
           </form>
