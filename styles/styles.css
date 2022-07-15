@@ -184,28 +184,18 @@ body {
   height: 19px;
 }
 
-.search-image:hover,
-.search-image:focus {
+.menu-top-link:hover svg,
+.menu-top-link:focus svg {
   fill: #756157;
   outline: none;
 }
 
-.search-image:active {
+.menu-top-link:active svg {
   fill: rgba(117, 97, 87, 0.3);
 }
 
 .favorite-image {
   fill: #000000;
-}
-
-.favorite-image:hover,
-.favorite-image:focus {
-  fill: #756157;
-  outline: none;
-}
-
-.favorite-image:active {
-  fill: rgba(117, 97, 87, 0.3);
 }
 
 .favorite {
@@ -779,6 +769,10 @@ body {
   margin-top: 53px;
 }
 
+.footer-social-link:focus svg {
+  fill: #68a2ca;
+}
+
 .footer-end {
   display: flex;
   justify-content: space-between;
@@ -1225,8 +1219,19 @@ body {
 }
 
 .pagination-current {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   color: #000000;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  padding: 11px 16px;
+  text-decoration: none;
 }
 
 .pagination-show-more {
@@ -1250,7 +1255,6 @@ body {
 .pagination-current:focus {
   background-color: #f2f2f2;
   cursor: default;
-  outline: none;
 }
 
 .pagination-current:active {
