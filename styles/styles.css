@@ -446,6 +446,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
 }
 
 .main-header::after {
@@ -453,7 +454,7 @@ body {
   background-image: url("../images/divider.svg");
   position: absolute;
   width: 1200px;
-  height: 105px;
+  min-height: 105px;
   bottom: 0;
 }
 
