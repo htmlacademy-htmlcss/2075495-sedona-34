@@ -428,34 +428,23 @@ body {
 }
 
 .main-index-image {
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+
   color: #000000;
-  background-color: #ffffff;
-  min-height: 485px;
+
   margin: 0;
   padding: 0;
-  padding-top: 48px;
+
 }
 
 .main-header {
-  margin-bottom: -51px;
   background-color: #acdbf9;
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
+  bottom: 1px;
   position: relative;
-
-}
-
-.main-header::after {
-  content: "";
-  background-image: url("../images/divider.svg");
-  position: absolute;
-  width: 1200px;
-  min-height: 105px;
-  bottom: 0;
+  padding: 52px 70px 79px 70px;
 }
 
 .welcome-image {
@@ -755,8 +744,13 @@ body {
 }
 
 .invite-to-subscribe-catalog {
-  width: 1200px;
-  min-height: 411px;
+  background-color: #ffffff;
+  color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  object-fit: cover;
+  padding: 91px 44px 91px 50px;
 }
 
 .footer-social {
@@ -1313,6 +1307,7 @@ body {
 
 .footer-logo {
   text-decoration: none;
+  display: inline-block;
 }
 
 .footer-logo:hover,
