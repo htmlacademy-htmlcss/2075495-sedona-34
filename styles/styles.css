@@ -441,8 +441,7 @@ body {
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
-  background-position: bottom, center;
-  bottom: 1px;
+  background-position: bottom -1px center, center;
   position: relative;
   padding: 52px 70px 79px 70px;
 }
