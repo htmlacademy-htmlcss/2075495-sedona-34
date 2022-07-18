@@ -428,33 +428,23 @@ body {
 }
 
 .main-index-image {
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+
   color: #000000;
-  background-color: #ffffff;
-  height: 485px;
+
   margin: 0;
   padding: 0;
-  padding-top: 48px;
+
 }
 
 .main-header {
-  margin-bottom: -51px;
   background-color: #acdbf9;
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
+  bottom: 1px;
   position: relative;
-}
-
-.main-header::after {
-  content: "";
-  background-image: url("../images/divider.svg");
-  position: absolute;
-  width: 1200px;
-  height: 105px;
-  bottom: 0;
+  padding: 52px 70px 79px 70px;
 }
 
 .welcome-image {
@@ -636,7 +626,6 @@ body {
   display: inline-block;
   padding: 5px 11px 5px 11px;
   border-width: 0;
-  margin-right: 20px;
   min-width: 137px;
   min-height: 27px;
 }
@@ -666,7 +655,7 @@ body {
 .button-favorite {
   display: inline-block;
   font: inherit;
-  width: 140px;
+  min-width: 137px;
   min-height: 37px;
   font-size: 16px;
   margin: 0;
@@ -749,12 +738,19 @@ body {
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 411px;
+  height: auto;
+  object-fit: cover;
+  padding: 96px 44px 91px 50px;
 }
 
 .invite-to-subscribe-catalog {
-  width: 1200px;
-  min-height: 411px;
+  background-color: #ffffff;
+  color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  object-fit: cover;
+  padding: 91px 44px 91px 50px;
 }
 
 .footer-social {
@@ -820,13 +816,11 @@ body {
 
 .subscribe-container {
   text-align: center;
-  padding-top: 89px;
-  padding-bottom: 94px;
 }
 
 .subscribe-form {
-  display: grid;
-  grid-template-columns: 200px 600px 200px 200px;
+  display: flex;
+  padding-left: 150px;
 }
 
 .email-field {
@@ -960,9 +954,10 @@ body {
 .card-buttons-wrap {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  min-width: 300px;
   margin: 0;
-  gap: 3px;
+  column-gap: 23px;
+  row-gap: 16px;
 }
 
 .catalog-filter-title {
@@ -1144,7 +1139,8 @@ body {
 .advantages-image {
   color: #000000;
   width: 800px;
-  height: 386px;
+  height: auto;
+  object-fit: cover;
 }
 
 .hotel-card-title,
@@ -1307,6 +1303,11 @@ body {
   height: 1px;
   background-color: #e6e6e6;
   content: "";
+}
+
+.footer-logo {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .footer-logo:hover,
